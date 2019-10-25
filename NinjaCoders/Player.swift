@@ -9,10 +9,13 @@
 import UIKit
 
 final class Player: UIImageView {
-    
-    init() {
-        super.init(image: UIImage(named: "ninja.png"))
-    }
-    
-    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+  
+  let speed: CGFloat = 100.0
+  var direction = CGPoint.zero
+  
+  init() {
+    super.init(image: UIImage(named: "ninja.png"))
+  }
+  
+  required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 }

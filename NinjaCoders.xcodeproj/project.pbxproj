@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5FA10423635A6F00BB128E /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FA10323635A6F00BB128E /* Engine.swift */; };
+		1B5FA106236367F800BB128E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FA105236367F800BB128E /* Line.swift */; };
 		B881CE7423626AE900CA8780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE7323626AE900CA8780 /* AppDelegate.swift */; };
 		B881CE7823626AE900CA8780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE7723626AE900CA8780 /* ViewController.swift */; };
 		B881CE7B23626AE900CA8780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B881CE7923626AE900CA8780 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5FA10323635A6F00BB128E /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		1B5FA105236367F800BB128E /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		B880FDD02363289B0061B210 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B881CE7023626AE900CA8780 /* NinjaCoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaCoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B881CE7323626AE900CA8780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +31,7 @@
 		B881CE7C23626AEB00CA8780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B881CE7F23626AEB00CA8780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B881CE8123626AEB00CA8780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B881CE8823626B1A00CA8780 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		B881CE8823626B1A00CA8780 /* GameView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B881CE8A23626D1C00CA8780 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B881CE8C23626D2900CA8780 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		B881CE8E23626D3F00CA8780 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5FA10223635A6200BB128E /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				1B5FA10323635A6F00BB128E /* Engine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
 		B881CE6723626AE900CA8780 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +76,12 @@
 		B881CE7223626AE900CA8780 /* NinjaCoders */ = {
 			isa = PBXGroup;
 			children = (
+				1B5FA10223635A6200BB128E /* Engine */,
 				B881CE8823626B1A00CA8780 /* GameView.swift */,
 				B881CE8E23626D3F00CA8780 /* Board.swift */,
 				B881CE8C23626D2900CA8780 /* Enemy.swift */,
 				B881CE8A23626D1C00CA8780 /* Player.swift */,
+				1B5FA105236367F800BB128E /* Line.swift */,
 				B881CE8723626B0300CA8780 /* misc */,
 			);
 			path = NinjaCoders;
@@ -162,7 +176,9 @@
 				B881CE8F23626D3F00CA8780 /* Board.swift in Sources */,
 				B881CE7823626AE900CA8780 /* ViewController.swift in Sources */,
 				B881CE8923626B1A00CA8780 /* GameView.swift in Sources */,
+				1B5FA106236367F800BB128E /* Line.swift in Sources */,
 				B881CE7423626AE900CA8780 /* AppDelegate.swift in Sources */,
+				1B5FA10423635A6F00BB128E /* Engine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +329,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pr0ctopus.NinjaCoders-67";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -331,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pr0ctopus.NinjaCoders-67";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
