@@ -10,8 +10,22 @@ import UIKit
 
 final class Board: UIView {
     
+    var didFail: (() -> Void)?
+    
     private let enemies: [Enemy] = (0...4).map { _ in Enemy() }
     private let player = Player()
+    
+    private var playerPoints: [CGPoint] = []
+    private var pathes: [UIBezierPath] = []
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        pathes.forEach {
+            UIColor(red: 0.16, green: 0.17, blue: 0.20, alpha: 1.00).set()
+            UIBezierPath(rect: $0.bounds).fill()
+        }
+    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -33,8 +47,17 @@ final class Board: UIView {
     }
     
     func tick() {
+        let activePath = buildPath(points: playerPoints)
         enemies.forEach { enemy in
             var center = enemy.offsetCenter
+            
+            if let path = activePath, path.bounds.contains(center) {
+                player.movement = .calm
+                player.center = playerPoints.first!
+                playerPoints.removeAll()
+                didFail?()
+            }
+            
             while !bounds.contains(center) {
                 enemy.gradient = .randomGradient()
                 center = enemy.offsetCenter
@@ -45,6 +68,39 @@ final class Board: UIView {
             )
             enemy.center = center
         }
+        
+        let playerCenter = player.offsetCenter
+        if playerCenter.x >= -35 && playerCenter.y >= -35 && playerCenter.x <= bounds.maxX + 35 && playerCenter.y <= bounds.maxY + 35 {
+            player.center = playerCenter
+        } else {
+            playerPoints.append(player.center)
+            if let path = buildPath(points: playerPoints) {
+                pathes.append(path)
+            }
+            setNeedsDisplay()
+            player.movement = .calm
+            playerPoints.removeAll()
+        }
+    }
+    
+    private func buildPath(points: [CGPoint]) -> UIBezierPath? {
+        guard !points.isEmpty else {return nil }
+        
+        let path = UIBezierPath()
+        path.move(to: points.first!)
+        
+        for point in points {
+            path.addLine(to: point)
+        }
+        
+        path.addLine(to: points.last!)
+        path.close()
+        return path
+    }
+    
+    func playerDidChangeMovement(movement: PlayerMovement) {
+        playerPoints.append(player.center)
+        player.movement = movement
     }
 }
 

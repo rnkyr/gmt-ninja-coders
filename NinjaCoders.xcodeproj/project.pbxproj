@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B880FDD02363289B0061B210 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B881CE7023626AE900CA8780 /* NinjaCoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaCoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B881CE7023626AE900CA8780 /* NinjaCoders20234.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaCoders20234.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B881CE7323626AE900CA8780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B881CE7723626AE900CA8780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B881CE7A23626AE900CA8780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		B881CE7123626AE900CA8780 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B881CE7023626AE900CA8780 /* NinjaCoders.app */,
+				B881CE7023626AE900CA8780 /* NinjaCoders20234.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 			);
 			name = NinjaCoders;
 			productName = NinjaCoders;
-			productReference = B881CE7023626AE900CA8780 /* NinjaCoders.app */;
+			productReference = B881CE7023626AE900CA8780 /* NinjaCoders20234.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -313,8 +313,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pr0ctopus.ninja-coders.user20234";
+				PRODUCT_NAME = NinjaCoders20234;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -331,8 +331,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pr0ctopus.ninja-coders.user20234";
+				PRODUCT_NAME = NinjaCoders20234;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
