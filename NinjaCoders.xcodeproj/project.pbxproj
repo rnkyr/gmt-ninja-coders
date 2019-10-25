@@ -16,6 +16,7 @@
 		B881CE8B23626D1C00CA8780 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE8A23626D1C00CA8780 /* Player.swift */; };
 		B881CE8D23626D2900CA8780 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE8C23626D2900CA8780 /* Enemy.swift */; };
 		B881CE8F23626D3F00CA8780 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE8E23626D3F00CA8780 /* Board.swift */; };
+		E8E475DC236367830027E437 /* CGRect+Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E475DB236367830027E437 /* CGRect+Collision.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B881CE8A23626D1C00CA8780 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B881CE8C23626D2900CA8780 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		B881CE8E23626D3F00CA8780 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		E8E475DB236367830027E437 /* CGRect+Collision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Collision.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				B881CE8823626B1A00CA8780 /* GameView.swift */,
 				B881CE8E23626D3F00CA8780 /* Board.swift */,
+				E8E475DB236367830027E437 /* CGRect+Collision.swift */,
 				B881CE8C23626D2900CA8780 /* Enemy.swift */,
 				B881CE8A23626D1C00CA8780 /* Player.swift */,
 				B881CE8723626B0300CA8780 /* misc */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B881CE8B23626D1C00CA8780 /* Player.swift in Sources */,
+				E8E475DC236367830027E437 /* CGRect+Collision.swift in Sources */,
 				B881CE8D23626D2900CA8780 /* Enemy.swift in Sources */,
 				B881CE8F23626D3F00CA8780 /* Board.swift in Sources */,
 				B881CE7823626AE900CA8780 /* ViewController.swift in Sources */,
@@ -313,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pr0ctopus.NinjaCoders-24954";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -331,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pr0ctopus.NinjaCoders-24954";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;

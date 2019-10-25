@@ -11,6 +11,7 @@ import UIKit
 final class Enemy: UIImageView {
     
     var gradient = CGPoint.zero
+    
     var offsetPoint: CGPoint {
         return CGPoint(x: gradient.x * enemyMovementOffset, y: gradient.y * enemyMovementOffset)
     }
