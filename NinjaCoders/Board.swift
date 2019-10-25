@@ -11,7 +11,7 @@ import UIKit
 final class Board: UIView {
     
     private let enemies: [Enemy] = (0...4).map { _ in Enemy() }
-    private let player = Player()
+    public let player = Player()
     
     override func layoutSubviews() {
         super.layoutSubviews()

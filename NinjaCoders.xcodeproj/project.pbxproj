@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C7D2A8E236362F500839E2C /* GameControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D2A8D236362F500839E2C /* GameControl.swift */; };
 		B881CE7423626AE900CA8780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE7323626AE900CA8780 /* AppDelegate.swift */; };
 		B881CE7823626AE900CA8780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B881CE7723626AE900CA8780 /* ViewController.swift */; };
 		B881CE7B23626AE900CA8780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B881CE7923626AE900CA8780 /* Main.storyboard */; };
@@ -19,8 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C7D2A8D236362F500839E2C /* GameControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControl.swift; sourceTree = "<group>"; };
 		B880FDD02363289B0061B210 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B881CE7023626AE900CA8780 /* NinjaCoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaCoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B881CE7023626AE900CA8780 /* Ninja Coders X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Coders X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B881CE7323626AE900CA8780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B881CE7723626AE900CA8780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B881CE7A23626AE900CA8780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		B881CE7123626AE900CA8780 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B881CE7023626AE900CA8780 /* NinjaCoders.app */,
+				B881CE7023626AE900CA8780 /* Ninja Coders X.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				B881CE8823626B1A00CA8780 /* GameView.swift */,
+				2C7D2A8D236362F500839E2C /* GameControl.swift */,
 				B881CE8E23626D3F00CA8780 /* Board.swift */,
 				B881CE8C23626D2900CA8780 /* Enemy.swift */,
 				B881CE8A23626D1C00CA8780 /* Player.swift */,
@@ -103,7 +106,7 @@
 			);
 			name = NinjaCoders;
 			productName = NinjaCoders;
-			productReference = B881CE7023626AE900CA8780 /* NinjaCoders.app */;
+			productReference = B881CE7023626AE900CA8780 /* Ninja Coders X.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B881CE8B23626D1C00CA8780 /* Player.swift in Sources */,
+				2C7D2A8E236362F500839E2C /* GameControl.swift in Sources */,
 				B881CE8D23626D2900CA8780 /* Enemy.swift in Sources */,
 				B881CE8F23626D3F00CA8780 /* Board.swift in Sources */,
 				B881CE7823626AE900CA8780 /* ViewController.swift in Sources */,
@@ -313,8 +317,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders.userX;
+				PRODUCT_NAME = "Ninja Coders X";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -331,8 +335,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr0ctopus.NinjaCoders.userX;
+				PRODUCT_NAME = "Ninja Coders X";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
