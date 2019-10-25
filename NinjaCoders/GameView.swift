@@ -34,6 +34,13 @@ final class GameView: UIView {
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(invertTick))
         doubleTap.numberOfTapsRequired = 2
         addGestureRecognizer(doubleTap)
+        
+        let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left, .up, .down]
+        for direction in directions {
+            let gesture = UISwipeGestureRecognizer(target: self, action: #selector(movePlayer))
+            gesture.direction = direction
+            self.addGestureRecognizer(gesture)
+        }
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -46,6 +53,11 @@ final class GameView: UIView {
             isTicking = true
             tick()
         }
+    }
+    
+    @objc
+    private func movePlayer(_ recognizer: UISwipeGestureRecognizer) {
+        board.startMovingPlayer(to: recognizer.direction)
     }
     
     @objc
