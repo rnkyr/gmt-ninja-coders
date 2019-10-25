@@ -1,5 +1,9 @@
 # GMT. Pilot: Ninja Coders
 
+## Результаты
+
+![Results](https://github.com/rnkyr/gmt-ninja-coders/blob/develop/results.png)
+
 ## Концепт
 
 Концепт игры xonix.
