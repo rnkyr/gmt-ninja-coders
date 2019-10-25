@@ -102,3 +102,7 @@ https://www.youtube.com/watch?v=zJCbKPNEnF8
 
 По истечению 2х часов **репозиторий закрывается** на пуши и стартует проверка. Кто не успел тот опоздал
 
+Перед отправкой просьба внести ваш номер в бандл и имя приложения. Т.е. нужно поменять в `Info.plist` поля 
+
+- Bundle identifier на что-то типа `com.pr0ctopus.ninja-coders.userX`
+- Bundle name на что-то типа `Ninja Coders X`
